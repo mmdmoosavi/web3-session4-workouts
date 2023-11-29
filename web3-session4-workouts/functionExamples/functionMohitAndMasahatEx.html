@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style = 'background-color : #000;'>
+  <noscript>This webpage does not support js</noscript>
+  <script>
+    //---- function ex one -----///
+    function masahtMoraba(x1){
+      let x1 = Number(prompt('Enter side of square : '));
+      return x1 ** 2;
+    }
+    console.log(masahatMoraba(4));
+    //----------------------------///
+    //----- function ex two ------///
+    function mohitMoraba(x2){
+      let x2 = Number(prompt('Enter side of square : '));
+      return x2 * 4;
+    }
+    console.log(mohitMoraba(3));
+    //----------------------------///
+    //------- function ex three ----///
+    function mohitTriangle(num1 , num2 , num3){
+      if(num1 == 0 || num2 == 0 || num3 == 0)return 'sides cant be zero !!!';
+      else if((((num1+num2) > num3) && ((num1+num3) > num2) && ((num3+num2) > num1))){
+        return num1 + num2 + num3;
+      }else return 'This values cant make a triangel !!!';
+    }
+    console.log(mohitTriangle(3,4,5));
+    //-------------------------------///
+    //--------- function ex four -------///
+    function masahatTriangel(m , h){
+      return (0.5 * m * h);
+    }
+    console.log(`masahate mosalas = ${masahatTriangel(12 , 8)}`);
+    //------------------------------------///
+    //-------- function ex five ----------///
+    function masahatCircle(r){
+      let pi = 3.14;
+      if(r != 0 || r > 0)return (pi * (r ** 2));
+      else console.log('radius cant be zero or nagetive !!!');
+    }
+    console.log(masahatCircle(2));
+    //-------------------------------------///
+    //------- function ex six ------------///
+    function mohitCircle(){
+      let pi = 3.14;
+      if(r != 0 || r > 0)return (2 * pi * r);
+      else console.log('radius cant be zero or nagetive !!!');
+    }
+    console.log(mohitCircle(10));
+    //-------------------------------------///
+    //------ function ex seven ------------///
+    function masahatMostatil(a , b){
+      if(a > 0 && b > 0)console.log('zele mostatil manfi nabashad !!!');
+      else return a*b;
+    }
+    masahatMostatil(10 , 2);
+    //--------------------------------------///
+    //-------- function ex eight -----------///
+    function mohitMostatil(){
+      if(a > 0 && b > 0)console.log('zele mostatil manfi nabashad !!!');
+      else return (a + b) * 2;
+    }
+    console.log(mohitMostatil(10 , 12));
+    //------------------------------------///
+    //-------- function ex nine ------------///
+    function masahetTrapezius(a , b , h){
+      if (a>0 && b>0 && h>0)return (0.5 * a * b * h);
+      else console.log('This values cant make a Trapezius');
+    }
+    console.log(masahetTrapeziu(10,30,23));
+    //---------------------------------------///
+    //----------- function ex ten ----------///
+    function mohitTrapeziu(a , b , c , d){
+      if (a>0 && b>0 && c>0 && d>0) return a+b+c+d;
+      else console.log('This values cant make a Trapezius');
+    }
+    console.log(mohitTrapeziu(10,33,13));
+    //---------------------------------------///
+  </script>
+  
+</body>
+</html>

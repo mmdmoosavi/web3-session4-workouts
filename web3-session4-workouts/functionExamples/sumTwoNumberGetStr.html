@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style = 'background-color : #000;'>
+  <noscript>This webpage does not support js</noscript>
+  <script>
+    let twoNums = prompt('Enter two number (number 1 , number2) : ');
+    let arrN = twoNums.split(',');
+    for(let i = 0 ; arrN[i]; i++){
+      arrN[i] = Number(arrN[i]);
+    }
+    function sum(num1 , num2){
+      return num1 + num2;
+    }
+    alert(sum(arrN[0] , arrN[1]));
+  </script>
+  
+</body>
+</html>
