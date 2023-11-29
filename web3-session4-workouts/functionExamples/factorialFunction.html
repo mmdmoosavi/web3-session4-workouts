@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial function</title>
+</head>
+<body style="background-color: #000;">
+    <script>
+        function factorial(x){
+            let mult = 1;
+            for(let i = 1;i <= x; i++){
+                mult *= i;
+            }
+            return mult;
+        }
+        console.log(`factorial ${10} = ${factorial(10)}`);
+    </script>
+</body>
+</html>
