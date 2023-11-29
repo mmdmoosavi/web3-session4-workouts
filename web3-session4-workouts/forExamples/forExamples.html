@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //--------------------------------------------------///
+      for (let i = 0; i <= 100; i++) {
+        if (i % 2 == 0) {
+          console.log(i + "is an even number");
+        }
+      }
+      //--------------------------------------------------///
+
+      for (let i = 0; i <= 100; i++) {
+        if (i % 2 != 0) {
+          console.log(i + "is an odd number");
+        }
+      }
+      //--------------------------------------------------///
+      let fNames = ["ali", "reza", "majid"];
+      for (i in fNames) {
+        cosole.log(i + "is in class");
+      }
+      //--------------------------------------------------///
+      let classMates = [];
+      for (i = 0; i <= 15; i++) {
+        fName2 = prompt("enter your name :");
+        classMates.push(fName2);
+      }
+      console.log(classMates);
+      //--------------------------------------------------///
+      let names = ["ali", "majid", "reza", "amir", "hamid"];
+      let sum = 0;
+      for (let i = 0; i <= names.length; i++) {
+        sum += 1;
+      }
+      console.log(`Number of classmates is ${sum}`);
+      //--------------------------------------------------///
+    </script>
+  </body>
+</html>
